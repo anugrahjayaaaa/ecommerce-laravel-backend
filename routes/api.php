@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\V1\HealthCheckController;
 use App\Http\Controllers\Api\V1\CategoryController;
+use App\Http\Controllers\Api\V1\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
@@ -9,4 +10,7 @@ Route::prefix('v1')->group(function () {
 
     // Categories
     Route::apiResource('categories', CategoryController::class);
+
+    // Products
+    Route::apiResource('products', ProductController::class);
 });
