@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\V1\HealthCheckController;
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\Api\V1\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
