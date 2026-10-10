@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\V1\Category\StoreCategoryRequest;
 use App\Http\Requests\V1\Category\UpdateCategoryRequest;
-use Illuminate\Http\Request;
 use App\Models\Category;
 
 class CategoryController extends Controller
@@ -54,7 +54,7 @@ class CategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Category $category, UpdateCategoryRequest $request)
+    public function update(UpdateCategoryRequest $request, Category $category, )
     {
         $data = $request->validated();
 
